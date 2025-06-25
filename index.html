@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header>
+        <h1>Ary's Gallery</h1><br>
+        <hr>
+        <p>Ary's Gallery is a responsive photo gallery built using HTML, CSS, and a touch of JavaScript. It features a minimalist layout<br> 
+            with smooth hover effects, a fullscreen image viewer — all without using any frameworks.</p> 
+        </header>
+        <hr>
+        <main>
+        <div class="img-container">
+            <img src="pictures/1.jpg" alt="1">
+            <img src="pictures/2.jpg" alt="2">
+            <img src="pictures/3.jpg" alt="3">
+            <img src="pictures/4.jpg" alt="4">
+            <img src="pictures/5.jpg" alt="5">
+            <img src="pictures/6.jpg" alt="6">
+            <img src="pictures/7.jpg" alt="7">
+            <img src="pictures/8.jpg" alt="8">
+            <img src="pictures/9.jpg" alt="9">
+            <img src="pictures/10.jpg" alt="10">
+            <img src="pictures/11.jpg" alt="11">
+            <img src="pictures/12.jpg" alt="12">
+            <img src="pictures/13.jpg" alt="13">
+            <img src="pictures/14.jpg" alt="14">
+            <img src="pictures/15.jpg" alt="15">
+            <img src="pictures/16.jpg" alt="16">
+            <img src="pictures/17.jpg" alt="17">
+            <img src="pictures/18.jpg" alt="18">
+            <img src="pictures/19.jpg" alt="19">
+            <img src="pictures/20.jpg" alt="20">
+            <img src="pictures/21.jpg" alt="21">
+            <img src="pictures/22.jpg" alt="22">
+            <img src="pictures/23.jpg" alt="23">
+            <img src="pictures/24.jpeg" alt="24">
+                
+            </div>
+        </main>
+        <br>
+        <footer>
+            <hr>
+            <p>© 2025 Ary. All rights reserved.<br>
+                Contact : <a href=mailto:"aryanyadav9831@email.com">E-Mail</a> <a href="https://www.linkedin.com/in/aryan-ydv/">LinkedIn</a></p>
+        </footer>
+    </div>
+    
+
+    <div class="click-img">
+        <img src="_ (1).jpg" alt="1">
+        <span>X</span>
+
+    </div>
+
+</body>
+<script>
+    let images=document.querySelectorAll(".img-container img");
+    let viewimage= document.querySelector(".click-img");
+    let close= document.querySelector(".click-img span");
+    let selected=document.querySelector(".click-img img");
+
+    for(let image of images){
+        image.addEventListener("click", function(e) {
+            viewimage.style.display= "flex";
+            selected.src= e.target.src
+        });
+        
+    }
+
+    close.addEventListener("click", function(){
+        viewimage.style.display="none";
+    })
+
+</script>
+</html>

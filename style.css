@@ -1,0 +1,104 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", "sans-serif";
+}
+
+body{
+    background-image: url("https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg?semt=ais_hybrid&w=740"); 
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    color: beige;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width: 100vw;
+    display: block;
+    margin: 0;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+header, footer {
+    width: 90%;
+    
+}
+
+header h1{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    font-size: 2.5rem;
+    
+}
+p{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 1rem;
+}
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: beige;
+}
+
+.img-container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: 0 auto;     
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;       
+}
+
+.img-container img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+    transition-duration: 0.4s;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.img-container img:hover {
+    transform: scale(1.2); rotate: 2deg;
+
+}
+.click-img{
+    position:fixed;
+    inset: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0,0.9);
+    
+}
+.click-img img{
+    height: 37rem;
+    width: 37rem;
+    border-radius: 2rem;
+}
+.click-img span{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
+    cursor:pointer ;
+}
